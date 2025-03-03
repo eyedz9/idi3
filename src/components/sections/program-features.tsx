@@ -1,89 +1,73 @@
 "use client";
 
 import React from 'react';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 
 export default function ProgramFeatures() {
+  const services = [
+    {
+      title: "Certificate Course",
+      description: "The Certificate Course explores residential design and home staging and is avocational. Students learn the most current design and techniques from a faculty of successful working professionals.",
+      icon: "🏠"
+    },
+    {
+      title: "Lecture Topics",
+      description: "Beautiful Kitchens, Luxury Bathrooms, Magic of Color, Natural and Healthy Home, Outdoor Spaces, High-Tech Home, Home Staging, and more.",
+      icon: "📚"
+    },
+    {
+      title: "Studio Workshops",
+      description: "Color & Styles, Furniture Selections, Textile Specifications, Drafting & Spaceplanning, Developing the Design Concept and Solution.",
+      icon: "🎨"
+    },
+    {
+      title: "Field Trips",
+      description: "Optional field trips to the Laguna Design Center and Stonemill Design Center to study sources of purchase for furniture, floorcoverings, and accessories.",
+      icon: "🚌"
+    },
+    {
+      title: "Online Learning",
+      description: "Online classes are live classes with personalized attention and are not just self-taught programs like many other online design schools.",
+      icon: "💻"
+    },
+    {
+      title: "In-Person Classes",
+      description: "Small class size and personal attention are offered in an industry current facility with hands-on learning experiences.",
+      icon: "👥"
+    }
+  ];
+
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-20 bg-accent">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row gap-8">
-          {/* Left side - Image */}
-          <motion.div 
-            className="lg:w-1/4"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="relative bg-gray-200 rounded-lg shadow-md aspect-[3/4] overflow-hidden">
-              <Image 
-                src="/images/course.jpg"
-                alt="Student with Certificate"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
-          </motion.div>
-          
-          {/* Right side - Content */}
-          <motion.div 
-            className="lg:w-3/4"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">12-Week Certificate Course</h2>
-            <p className="text-lg text-gray-700 mb-8">
-              The Certificate Course explores residential design and home staging and is avocational. Students learn the most current design and techniques from a faculty of successful working professionals. Small class size and personal attention are offered in an industry current facility.
-            </p>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Lecture Topics */}
-              <div>
-                <h4 className="text-xl font-semibold mb-4 text-primary">Lecture Topics</h4>
-                <ul className="space-y-2 text-gray-700">
-                  <li>Beautiful Kitchens</li>
-                  <li>The Luxury Bathroom</li>
-                  <li>Magic of Color</li>
-                  <li>The Natural and Healthy Home</li>
-                  <li>Outdoor Spaces</li>
-                  <li>The High-Tech Home</li>
-                  <li>Home Staging</li>
-                  <li>Design Resources</li>
-                  <li>Floors That Rock</li>
-                  <li>Indoor Plantscaping</li>
-                  <li>Principles &amp; Elements of Design</li>
-                  <li>Planning The Space</li>
-                  <li>Great Windows and Walls</li>
-                  <li>The History of the Chair</li>
-                </ul>
-              </div>
-              
-              {/* Studio Workshops */}
-              <div>
-                <h4 className="text-xl font-semibold mb-4 text-primary">Studio Workshops</h4>
-                <ul className="space-y-2 text-gray-700 mb-8">
-                  <li>Color &amp; Styles</li>
-                  <li>Furniture Selections</li>
-                  <li>Textile Specifications</li>
-                  <li>Drafting &amp; Spaceplanning</li>
-                  <li>Developing the Design Concept and Solution</li>
-                </ul>
-                
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <h4 className="text-lg font-semibold mb-2 text-primary">Field Trips - Optional</h4>
-                  <p className="text-gray-700">
-                    Field Trips to the Laguna Design Center and Stonemill Design Center to study sources of purchase for furniture, floorcoverings, wallcoverings, and accessories.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-primary">Our Best Services</h2>
+          <div className="w-20 h-1 bg-secondary mx-auto my-6"></div>
+          <div className="flex justify-center mt-8">
+            <a href="#" className="text-primary hover:text-secondary font-medium transition-colors border-b-2 border-secondary pb-1">
+              More Services
+            </a>
+          </div>
+        </div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+            >
+              <div className="text-4xl mb-4 text-secondary">{service.icon}</div>
+              <h3 className="text-xl font-bold mb-4 text-primary">{service.title}</h3>
+              <p className="text-gray-700 mb-6">{service.description}</p>
+              <a href="#" className="text-primary hover:text-secondary font-medium transition-colors inline-block">
+                Read More
+              </a>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

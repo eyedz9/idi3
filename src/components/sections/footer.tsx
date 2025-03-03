@@ -6,38 +6,127 @@ import { Button } from '@/components/ui/button';
 export default function Footer() {
   return (
     <footer className="bg-primary text-white">
-      {/* Contact Info Section */}
-      <section className="py-8 bg-white text-gray-800">
+      {/* Partners/Experience Section */}
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <ul className="flex flex-col md:flex-row gap-4 md:gap-8">
-                <li className="text-gray-700 font-medium">Call: <a href="tel:(949) 675-4451" className="text-primary hover:text-primary/80">(949) 675-4451</a></li>
-                <li className="text-gray-700 font-medium">Email: <a href="mailto:Contact@idi.edu" className="text-primary hover:text-primary/80">Contact@idi.edu</a></li>
-              </ul>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+            <div className="text-center">
+              <img src="/images/logo.png" alt="IDI Logo" className="h-16 w-auto mx-auto mb-2" />
+              <p className="text-primary font-medium">+6 Years<br />Experience</p>
             </div>
-            <div>
-              <p className="text-gray-700">
-                For information on the career-oriented programs, such as, the Associate of Arts Degree in Interior Design, Bachelor of Arts in Interior Design &amp; Master of Interior Architecture Program go to <a href="https://www.idi.edu/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">idi.edu</a>.
-              </p>
+            <div className="text-center">
+              <img src="/images/logo.png" alt="IDI Logo" className="h-16 w-auto mx-auto mb-2" />
+              <p className="text-primary font-medium">+3 Years<br />Experience</p>
+            </div>
+            <div className="text-center">
+              <img src="/images/logo.png" alt="IDI Logo" className="h-16 w-auto mx-auto mb-2" />
+              <p className="text-primary font-medium">+5 Years<br />Experience</p>
+            </div>
+            <div className="text-center">
+              <img src="/images/logo.png" alt="IDI Logo" className="h-16 w-auto mx-auto mb-2" />
+              <p className="text-primary font-medium">+2 Years<br />Experience</p>
             </div>
           </div>
         </div>
       </section>
       
-      {/* Registration Banner */}
-      <section className="py-10 bg-gray-100 text-gray-800">
+      {/* Recent News Section */}
+      <section className="py-16 bg-accent">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col items-center justify-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-primary text-center">Register Now For May 2025 Classes</h2>
-            <Button 
-              className="bg-secondary text-white hover:bg-secondary/90 px-8 py-3 rounded-md"
-              asChild
-            >
-              <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
-                Sign Up
-              </a>
-            </Button>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-primary">Recent News</h2>
+            <div className="w-20 h-1 bg-secondary mx-auto my-6"></div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <img src="/images/course.jpg" alt="Blog Image" className="w-full h-48 object-cover" />
+              <div className="p-6">
+                <a href="#" className="block text-xl font-bold text-primary hover:text-secondary mb-2">
+                  Certificate Course Enrollment Open
+                </a>
+                <div className="flex items-center gap-4 mb-3 text-sm text-gray-600">
+                  <span>May 1, 2025</span>
+                  <span>Education</span>
+                </div>
+                <p className="text-gray-700 mb-4">
+                  Enrollment is now open for our May 2025 Certificate Course. Learn interior design and decorating online or in-person at Interior Designers Institute.
+                </p>
+                <div className="flex items-center mt-4">
+                  <img src="/images/about.jpg" alt="Author" className="w-10 h-10 rounded-full mr-3" />
+                  <div>
+                    <p className="font-semibold text-primary">Mark Nicholes</p>
+                    <p className="text-sm text-gray-600">Program Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <img src="/images/about.jpg" alt="Blog Image" className="w-full h-48 object-cover" />
+              <div className="p-6">
+                <a href="#" className="block text-xl font-bold text-primary hover:text-secondary mb-2">
+                  New Design Trends for 2025
+                </a>
+                <div className="flex items-center gap-4 mb-3 text-sm text-gray-600">
+                  <span>April 15, 2025</span>
+                  <span>Design</span>
+                </div>
+                <p className="text-gray-700 mb-4">
+                  Discover the latest interior design trends for 2025. Our faculty shares insights on colors, materials, and styles that will dominate this year.
+                </p>
+                <div className="flex items-center mt-4">
+                  <img src="/images/about.jpg" alt="Author" className="w-10 h-10 rounded-full mr-3" />
+                  <div>
+                    <p className="font-semibold text-primary">William Harry</p>
+                    <p className="text-sm text-gray-600">Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="hidden lg:block bg-white rounded-lg overflow-hidden shadow-md">
+              <img src="/images/course.jpg" alt="Blog Image" className="w-full h-48 object-cover" />
+              <div className="p-6">
+                <a href="#" className="block text-xl font-bold text-primary hover:text-secondary mb-2">
+                  Student Success Stories
+                </a>
+                <div className="flex items-center gap-4 mb-3 text-sm text-gray-600">
+                  <span>March 28, 2025</span>
+                  <span>Success</span>
+                </div>
+                <p className="text-gray-700 mb-4">
+                  Read about our successful graduates who have launched their own interior design businesses or joined prestigious design firms.
+                </p>
+                <div className="flex items-center mt-4">
+                  <img src="/images/about.jpg" alt="Author" className="w-10 h-10 rounded-full mr-3" />
+                  <div>
+                    <p className="font-semibold text-primary">Mark Nicholes</p>
+                    <p className="text-sm text-gray-600">Program Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Newsletter Section */}
+      <section className="py-12 bg-gray-100 text-gray-800">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-primary">Newsletter Signup</h2>
+            <p className="text-gray-700 mb-6">We send you latest news couple a month (No Spam).</p>
+            <div className="flex flex-col sm:flex-row gap-2">
+              <input 
+                type="email" 
+                placeholder="Your email address" 
+                className="flex-1 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+              <Button className="bg-secondary text-black hover:bg-secondary/90 px-6 py-3">
+                Subscribe
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -48,14 +137,10 @@ export default function Footer() {
           {/* Column 1: Logo and Social */}
           <div>
             <div className="mb-4">
-              <a href="/" className="inline-flex items-center">
-                <div className="w-10 h-10 bg-white rounded-md flex items-center justify-center mr-3">
-                  <span className="text-primary font-bold text-lg">IDI</span>
-                </div>
-                <div>
-                  <span className="text-white font-bold text-xl block leading-tight">Interior Designers</span>
-                  <span className="text-white font-bold text-xl block leading-tight">Institute</span>
-                </div>
+              <a href="/" className="inline-block">
+                <span className="text-white font-bold text-2xl block">Interior Designers</span>
+                <span className="text-white font-bold text-xl block">Institute</span>
+                <span className="text-secondary text-sm">design studio</span>
               </a>
             </div>
             <div className="flex space-x-4 mb-4">
@@ -131,9 +216,9 @@ export default function Footer() {
       <div className="bg-gray-900 py-4">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-white/60 text-sm mb-2 md:mb-0">©2022 Interior Designers Institute. All Rights Reserved.</p>
+            <p className="text-white/60 text-sm mb-2 md:mb-0">©2025 Interior Designers Institute. All Rights Reserved.</p>
             <p className="text-white/60 text-sm">
-              <a href="https://www.greatlike.com/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Orange County Website Design</a> GreatLike Media
+              <a href="#" className="hover:text-white transition-colors">Website Design</a> by IDI
             </p>
           </div>
         </div>
