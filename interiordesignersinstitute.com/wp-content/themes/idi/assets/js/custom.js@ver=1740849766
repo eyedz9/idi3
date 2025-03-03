@@ -1,0 +1,72 @@
+
+
+
+
+
+
+
+
+// header-js
+
+window.onscroll = function() {myFunction()};
+
+
+
+var header = document.getElementById("top-header");
+
+var sticky = header.offsetTop;
+
+
+
+function myFunction() {
+
+  if (window.pageYOffset > sticky) {
+
+    header.classList.add("sticky");
+
+} else {
+
+    header.classList.remove("sticky");
+
+}
+
+}
+
+
+
+
+
+
+
+     $(".navbar-toggler").click(function () {
+
+   $("body").toggleClass("overflow");
+
+});
+
+/*
+*
+Added for zipcode COntact Form 7
+*/
+jQuery(document).ready(function(){
+	$('.mt-zip-code,.mt_contact_frm_phone').keypress(function (e) {
+		var regex = new RegExp("^[0-9-+-/]+$");
+		var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+		if (regex.test(str)) {
+			return true;
+		}
+	
+		e.preventDefault();
+		return false;
+	});
+
+  $(".mt_city_contact option:first").text('City*');
+  $(".mt_state_contact option:first").text('State*');
+  
+
+  $(".mt-zip-code").attr({
+    "maxlength" : 6,        // substitute your own
+    "minlength" : 2          // values (or variables) here
+ });
+
+});
