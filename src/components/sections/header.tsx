@@ -75,7 +75,7 @@ export default function Header() {
                   <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Certificate Course</a>
                 </li>
                 <li className="group relative">
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Schedule AND Tuition</a>
+                  <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Schedule &amp; Tuition</a>
                 </li>
                 <li className="group relative">
                   <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Supplies</a>
@@ -91,11 +91,11 @@ export default function Header() {
                 </li>
                 <li className="ml-4">
                   <Button 
-                    className="bg-secondary text-secondary-foreground hover:bg-secondary/90"
+                    className="bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white font-extrabold text-lg px-8 py-6 rounded-lg shadow-lg transform transition-all duration-300 hover:shadow-xl"
                     asChild
                   >
                     <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
-                      Enroll Now
+                      Enroll Today<span className="ml-2">→</span>
                     </a>
                   </Button>
                 </li>

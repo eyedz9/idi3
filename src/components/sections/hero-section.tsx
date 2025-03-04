@@ -43,11 +43,11 @@ export default function HeroSection() {
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center">
                   <Button 
-                    className="bg-secondary hover:bg-secondary/90 text-black px-8 py-3"
+                    className="bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white font-extrabold text-lg px-8 py-6 rounded-lg shadow-lg transform transition-all duration-300 hover:shadow-xl"
                     asChild
                   >
                     <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
-                    Ready to Bring Your Design Dreams to Life? Enroll Today.
+                      Enroll Today<span className="ml-2">→</span>
                     </a>
                   </Button>
                 </div>

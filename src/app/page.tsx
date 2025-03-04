@@ -4,7 +4,7 @@ import Header from '@/components/sections/header';
 import HeroSection from '@/components/sections/hero-section';
 import AboutSection from '@/components/sections/about-section';
 import ProgramFeatures from '@/components/sections/program-features';
-import RegistrationForm from '@/components/sections/registration-form';
+import ScheduleCost from '@/components/sections/schedule-cost';
 import Testimonials from '@/components/sections/testimonials';
 import Footer from '@/components/sections/footer';
 
@@ -17,7 +17,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ProgramFeatures />
-        <RegistrationForm />
+        <ScheduleCost />
       </main>
       <Footer />
     </>

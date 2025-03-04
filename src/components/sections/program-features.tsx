@@ -85,12 +85,12 @@ export default function ProgramFeatures() {
         
         <div className="mt-12 text-center">
           <Button 
-            variant="secondary" 
-            size="lg" 
-            className="font-semibold text-base"
-            onClick={() => window.location.href = '/contact-us'}
+            className="bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white font-extrabold text-lg px-8 py-6 rounded-lg shadow-lg transform transition-all duration-300 hover:shadow-xl"
+            asChild
           >
-            Enroll Now
+            <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
+              Enroll Today<span className="ml-2">→</span>
+            </a>
           </Button>
           <p className="mt-4 text-gray-700">Start your interior design journey today!</p>
         </div>

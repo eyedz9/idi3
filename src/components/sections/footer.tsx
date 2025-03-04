@@ -6,126 +6,51 @@ import { Button } from '@/components/ui/button';
 export default function Footer() {
   return (
     <footer className="bg-primary text-white">
-      {/* Partners/Experience Section */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            <div className="text-center">
-              <img src="/images/logo.png" alt="IDI Logo" className="h-16 w-auto mx-auto mb-2" />
-              <p className="text-primary font-medium">+6 Years<br />Experience</p>
-            </div>
-            <div className="text-center">
-              <img src="/images/logo.png" alt="IDI Logo" className="h-16 w-auto mx-auto mb-2" />
-              <p className="text-primary font-medium">+3 Years<br />Experience</p>
-            </div>
-            <div className="text-center">
-              <img src="/images/logo.png" alt="IDI Logo" className="h-16 w-auto mx-auto mb-2" />
-              <p className="text-primary font-medium">+5 Years<br />Experience</p>
-            </div>
-            <div className="text-center">
-              <img src="/images/logo.png" alt="IDI Logo" className="h-16 w-auto mx-auto mb-2" />
-              <p className="text-primary font-medium">+2 Years<br />Experience</p>
-            </div>
-          </div>
-        </div>
-      </section>
       
-      {/* Recent News Section */}
+      {/* Supplies Section */}
       <section className="py-16 bg-accent">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-primary">Recent News</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-primary">Supplies</h2>
             <div className="w-20 h-1 bg-secondary mx-auto my-6"></div>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="max-w-5xl mx-auto">
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img src="/images/course.jpg" alt="Blog Image" className="w-full h-48 object-cover" />
-              <div className="p-6">
-                <a href="#" className="block text-xl font-bold text-primary hover:text-secondary mb-2">
-                  Certificate Course Enrollment Open
-                </a>
-                <div className="flex items-center gap-4 mb-3 text-sm text-gray-600">
-                  <span>May 1, 2025</span>
-                  <span>Education</span>
+              <div className="md:flex">
+                <div className="md:w-1/3">
+                  <img src="/images/drafting_table.jpg" alt="Portable Drafting Table" className="w-full object-contain p-4" />
                 </div>
-                <p className="text-gray-700 mb-4">
-                  Enrollment is now open for our May 2025 Certificate Course. Learn interior design and decorating online or in-person at Interior Designers Institute.
-                </p>
-                <div className="flex items-center mt-4">
-                  <img src="/images/about.jpg" alt="Author" className="w-10 h-10 rounded-full mr-3" />
-                  <div>
-                    <p className="font-semibold text-primary">Mark Nicholes</p>
-                    <p className="text-sm text-gray-600">Program Director</p>
+                <div className="p-6 md:w-2/3">
+                  <h3 className="text-xl font-bold text-primary mb-4">
+                    Required Equipment for the online certificate studio workshop
+                  </h3>
+                  <div className="mb-4">
+                    <p className="font-semibold text-gray-800">Portable Drafting Table (minimum size 20" x 26") with parallel bar or straightedge</p>
+                    <p className="text-gray-700 mt-2">
+                      Portable drawing and drafting board with built-in parallel straightedge for all kinds of creative and technical applications. Perfect for students and those who need an accurate drawing surface but don't have the space for a full-size drafting table.
+                    </p>
+                    <p className="text-red-700 mt-2">
+                      This item is mandatory and can be purchased from various suppliers.
+                    </p>
+                  </div>
+                  
+                  <div className="mt-6 flex flex-wrap gap-3 justify-center md:justify-start">
+                    <a href="https://www.amazon.com/Martin-Pro-Draft-Adjustable-Parallel-U-PEB2026K/dp/B004KJECU6/ref=asc_df_B004KJECU6/?tag=hyprod-20&linkCode=df0&hvadid=168221741416&hvpos=&hvnetw=g&hvrand=15363525678410988695&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031550&hvtargid=pla-273379533822&th=1" className="inline-block bg-secondary text-black font-semibold py-2 px-6 rounded hover:bg-secondary/90 transition-colors">
+                      Amazon
+                    </a>
+                    <a href="https://www.engineersupply.com/Pacific-Arc-Original-PXB-Drawing-Board.aspx?variantId=d8683965-9a5f-4ad7-b645-26517d2a4775" className="inline-block bg-secondary text-black font-semibold py-2 px-6 rounded hover:bg-secondary/90 transition-colors">
+                      Engineer Supply
+                    </a>
+                    <a href="https://www.draftingsuppliesdew.com/alvin-pacific-arc-pxb-portable-parallel-straightedge-board" className="inline-block bg-secondary text-black font-semibold py-2 px-6 rounded hover:bg-secondary/90 transition-colors">
+                      Drafting Supplies
+                    </a>
+                    <a href="https://www.utrechtart.com/products/blick-portable-drafting-board/" className="inline-block bg-secondary text-black font-semibold py-2 px-6 rounded hover:bg-secondary/90 transition-colors">
+                      Utrecht Art
+                    </a>
                   </div>
                 </div>
               </div>
-            </div>
-            
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img src="/images/about.jpg" alt="Blog Image" className="w-full h-48 object-cover" />
-              <div className="p-6">
-                <a href="#" className="block text-xl font-bold text-primary hover:text-secondary mb-2">
-                  New Design Trends for 2025
-                </a>
-                <div className="flex items-center gap-4 mb-3 text-sm text-gray-600">
-                  <span>April 15, 2025</span>
-                  <span>Design</span>
-                </div>
-                <p className="text-gray-700 mb-4">
-                  Discover the latest interior design trends for 2025. Our faculty shares insights on colors, materials, and styles that will dominate this year.
-                </p>
-                <div className="flex items-center mt-4">
-                  <img src="/images/about.jpg" alt="Author" className="w-10 h-10 rounded-full mr-3" />
-                  <div>
-                    <p className="font-semibold text-primary">William Harry</p>
-                    <p className="text-sm text-gray-600">Designer</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="hidden lg:block bg-white rounded-lg overflow-hidden shadow-md">
-              <img src="/images/course.jpg" alt="Blog Image" className="w-full h-48 object-cover" />
-              <div className="p-6">
-                <a href="#" className="block text-xl font-bold text-primary hover:text-secondary mb-2">
-                  Student Success Stories
-                </a>
-                <div className="flex items-center gap-4 mb-3 text-sm text-gray-600">
-                  <span>March 28, 2025</span>
-                  <span>Success</span>
-                </div>
-                <p className="text-gray-700 mb-4">
-                  Read about our successful graduates who have launched their own interior design businesses or joined prestigious design firms.
-                </p>
-                <div className="flex items-center mt-4">
-                  <img src="/images/about.jpg" alt="Author" className="w-10 h-10 rounded-full mr-3" />
-                  <div>
-                    <p className="font-semibold text-primary">Mark Nicholes</p>
-                    <p className="text-sm text-gray-600">Program Director</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Newsletter Section */}
-      <section className="py-12 bg-gray-100 text-gray-800">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-primary">Newsletter Signup</h2>
-            <p className="text-gray-700 mb-6">We send you latest news couple a month (No Spam).</p>
-            <div className="flex flex-col sm:flex-row gap-2">
-              <input 
-                type="email" 
-                placeholder="Your email address" 
-                className="flex-1 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <Button className="bg-secondary text-black hover:bg-secondary/90 px-6 py-3">
-                Subscribe
-              </Button>
             </div>
           </div>
         </div>
@@ -138,9 +63,7 @@ export default function Footer() {
           <div>
             <div className="mb-4">
               <a href="/" className="inline-block">
-                <span className="text-white font-bold text-2xl block">Interior Designers</span>
-                <span className="text-white font-bold text-xl block">Institute</span>
-                <span className="text-secondary text-sm">design studio</span>
+                <img src="/images/logo.png" alt="Interior Designers Institute" className="h-16 w-auto" />
               </a>
             </div>
             <div className="flex space-x-4 mb-4">
@@ -205,7 +128,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-white/80 font-semibold">Email:</span>
-                <a href="mailto:Contact@idi.edu" className="text-white/80 hover:text-white transition-colors">Contact@idi.edu</a>
+                <a href="mailto:Contact@idi.edu" className="text-white/80 hover:text-white transition-colors">contact@idi.edu</a>
               </li>
             </ul>
           </div>
@@ -217,9 +140,6 @@ export default function Footer() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 text-sm mb-2 md:mb-0">©2025 Interior Designers Institute. All Rights Reserved.</p>
-            <p className="text-white/60 text-sm">
-              <a href="#" className="hover:text-white transition-colors">Website Design</a> by IDI
-            </p>
           </div>
         </div>
       </div>

@@ -40,8 +40,7 @@ export default function AboutSection() {
                 <Button 
                   className="bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white font-extrabold text-lg px-8 py-6 rounded-lg shadow-lg transform transition-all duration-300 hover:shadow-xl"
                 >
-                  <span className="mr-2">✨</span>
-                  UNLEASH YOUR CREATIVE POTENTIAL TODAY
+                  ENROLL TODAY
                   <span className="ml-2">→</span>
                 </Button>
               </motion.div>

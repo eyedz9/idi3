@@ -6,8 +6,8 @@ import { Button } from '@/components/ui/button';
 
 export default function RegistrationForm() {
   return (
-    <section className="py-20 bg-[url('/images/tution-bg-wrapper.jpg')] bg-cover bg-center bg-no-repeat text-white relative">
-      <div className="absolute inset-0 bg-primary/80"></div>
+    <section className="py-20 bg-[url('/images/schedule-bg.jpg')] bg-cover bg-center bg-no-repeat text-white relative">
+      <div className="absolute inset-0 bg-black/80"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <motion.div
@@ -58,25 +58,18 @@ export default function RegistrationForm() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row justify-center gap-6 mt-10">
+          </div>
+        </div>
+          <div className="flex flex-col md:flex-row justify-center gap-6 mt-10">            
             <Button 
-              className="bg-white text-primary hover:bg-white/90 px-8 py-6 text-lg font-medium"
-              asChild
-            >
-              <a href="#">Contact Us</a>
-            </Button>
-            
-            <Button 
-              className="bg-secondary text-black hover:bg-secondary/90 px-8 py-6 text-lg font-medium"
+              className="mx-auto bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white font-extrabold text-lg px-8 py-6 rounded-lg shadow-lg transform transition-all duration-300 hover:shadow-xl"
               asChild
             >
               <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
-                Enroll Now
+                Enroll Today<span className="ml-2">→</span>
               </a>
             </Button>
           </div>
-          </div>
-        </div>
       </div>
     </section>
   );
