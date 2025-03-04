@@ -14,10 +14,23 @@ export default function Header() {
 
   return (
     <header className="relative z-50">
-      {/* Top Bar with Social Icons */}
+      {/* Top Bar with Contact Info and Social Icons */}
       <div className="bg-primary py-2 hidden lg:block">
         <div className="container mx-auto px-4">
-          <div className="flex justify-end">
+          <div className="flex justify-between items-center">
+            {/* Contact Info */}
+            <div className="flex space-x-6 text-white">
+              <div className="flex items-center">
+                <span className="font-medium">Call: </span>
+                <a href="tel:(949) 675-4451" className="ml-1 hover:text-secondary transition-colors">(949) 675-4451</a>
+              </div>
+              <div className="flex items-center">
+                <span className="font-medium">Email: </span>
+                <a href="mailto:Contact@idi.edu" className="ml-1 hover:text-secondary transition-colors">Contact@idi.edu</a>
+              </div>
+            </div>
+            
+            {/* Social Icons */}
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-secondary transition-colors">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -51,22 +64,43 @@ export default function Header() {
             {/* Logo */}
             <div className="flex items-center">
               <a href="/" className="flex items-center">
-                <div className="mr-3">
-                  <span className="text-primary font-bold text-2xl">Interior Designers</span>
-                  <span className="text-primary font-bold text-xl block">Institute</span>
-                  <span className="text-secondary text-sm">design studio</span>
-                </div>
+                <img src="/images/logo.png" alt="Interior Designers Institute" className="h-16" />
               </a>
             </div>
 
-            {/* Contact Info - Desktop */}
-            <div className="hidden lg:block">
-              <ul className="text-right">
-                <li className="text-gray-700 font-medium">Please Contact us!</li>
-                <li className="text-gray-700 font-medium">Call: <a href="tel:(949) 675-4451" className="text-primary hover:text-primary/80 transition-colors">(949) 675-4451</a></li>
-                <li className="text-gray-700 font-medium">Email: <a href="mailto:Contact@idi.edu" className="text-primary hover:text-primary/80 transition-colors">Contact@idi.edu</a></li>
+            {/* Navigation - moved to main header and right-justified */}
+            <nav className="hidden lg:flex justify-end items-center">
+              <ul className="flex items-center">
+                <li className="group relative">
+                  <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Certificate Course</a>
+                </li>
+                <li className="group relative">
+                  <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Schedule AND Tuition</a>
+                </li>
+                <li className="group relative">
+                  <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Supplies</a>
+                </li>
+                <li className="group relative">
+                  <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">IDI</a>
+                </li>
+                <li className="group relative">
+                  <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Disclosures</a>
+                </li>
+                <li className="group relative">
+                  <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Contact Us</a>
+                </li>
+                <li className="ml-4">
+                  <Button 
+                    className="bg-secondary text-secondary-foreground hover:bg-secondary/90"
+                    asChild
+                  >
+                    <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
+                      Enroll Now
+                    </a>
+                  </Button>
+                </li>
               </ul>
-            </div>
+            </nav>
 
             {/* Mobile Menu Button */}
             <div className="lg:hidden">
@@ -90,41 +124,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Navigation Bar */}
-      <div className="bg-accent hidden lg:block border-t border-gray-200">
-        <div className="container mx-auto px-4">
-          <nav className="flex justify-center">
-            <ul className="flex">
-              <li className="group relative">
-                <a href="#" className="block px-5 py-4 text-gray-700 hover:text-primary font-medium transition-colors">Home</a>
-              </li>
-              <li className="group relative">
-                <a href="#" className="block px-5 py-4 text-gray-700 hover:text-primary font-medium transition-colors">About Us</a>
-                <div className="absolute left-0 hidden group-hover:block bg-white shadow-md min-w-[200px] z-10">
-                  <a href="#" className="block px-5 py-3 text-gray-700 hover:text-primary hover:bg-gray-50">Certificate Course</a>
-                  <a href="#" className="block px-5 py-3 text-gray-700 hover:text-primary hover:bg-gray-50">Our Team</a>
-                </div>
-              </li>
-              <li className="group relative">
-                <a href="#" className="block px-5 py-4 text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
-                <div className="absolute left-0 hidden group-hover:block bg-white shadow-md min-w-[200px] z-10">
-                  <a href="#" className="block px-5 py-3 text-gray-700 hover:text-primary hover:bg-gray-50">Schedule AND Tuition</a>
-                  <a href="#" className="block px-5 py-3 text-gray-700 hover:text-primary hover:bg-gray-50">Supplies</a>
-                </div>
-              </li>
-              <li className="group relative">
-                <a href="#" className="block px-5 py-4 text-gray-700 hover:text-primary font-medium transition-colors">Projects</a>
-              </li>
-              <li className="group relative">
-                <a href="#" className="block px-5 py-4 text-gray-700 hover:text-primary font-medium transition-colors">Blog</a>
-              </li>
-              <li className="group relative">
-                <a href="#" className="block px-5 py-4 text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
 
       {/* Mobile Menu */}
       <AnimatePresence>
@@ -140,46 +139,18 @@ export default function Header() {
               {/* Mobile Contact Info */}
               <div className="mb-4 pb-4 border-b border-gray-200">
                 <ul>
-                  <li className="text-gray-700 font-medium">Please Contact us!</li>
                   <li className="text-gray-700 font-medium">Call: <a href="tel:(949) 675-4451" className="text-primary">(949) 675-4451</a></li>
                   <li className="text-gray-700 font-medium">Email: <a href="mailto:Contact@idi.edu" className="text-primary">Contact@idi.edu</a></li>
                 </ul>
               </div>
               
               <nav className="flex flex-col space-y-4">
-                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Home</a>
-                
-                <div>
-                  <button 
-                    onClick={() => setIsSubmenuOpen(!isSubmenuOpen)}
-                    className="flex items-center justify-between w-full text-gray-700 hover:text-primary font-medium transition-colors py-2"
-                  >
-                    <span>About Us</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" className={`h-4 w-4 transition-transform ${isSubmenuOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                  
-                  <AnimatePresence>
-                    {isSubmenuOpen && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.2 }}
-                        className="pl-4 mt-2 space-y-2"
-                      >
-                        <a href="#" className="block text-gray-700 hover:text-primary py-1">Certificate Course</a>
-                        <a href="#" className="block text-gray-700 hover:text-primary py-1">Our Team</a>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-                
-                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Services</a>
-                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Projects</a>
-                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Blog</a>
-                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Contact</a>
+                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Certificate Course</a>
+                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Schedule AND Tuition</a>
+                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Supplies</a>
+                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">IDI</a>
+                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Disclosures</a>
+                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Contact Us</a>
                 
                 <Button 
                   className="bg-secondary text-secondary-foreground hover:bg-secondary/90 w-full mt-4"

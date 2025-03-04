@@ -17,27 +17,9 @@ export default function RegistrationForm() {
             transition={{ duration: 0.6 }}
             className="text-center mb-10"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Join with Interior Designers Institute and</h2>
-            <h3 className="text-2xl md:text-3xl font-bold text-secondary">Now Make Your Home More Lovely!</h3>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Schedule and Cost</h2>
+            <div className="w-20 h-1 bg-secondary mx-auto my-6"></div>
           </motion.div>
-
-          <div className="flex flex-col md:flex-row justify-center gap-6 mt-10">
-            <Button 
-              className="bg-white text-primary hover:bg-white/90 px-8 py-6 text-lg font-medium"
-              asChild
-            >
-              <a href="#">Contact Us</a>
-            </Button>
-            
-            <Button 
-              className="bg-secondary text-black hover:bg-secondary/90 px-8 py-6 text-lg font-medium"
-              asChild
-            >
-              <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
-                Enroll Now
-              </a>
-            </Button>
-          </div>
           
           <div className="mt-16 grid md:grid-cols-2 gap-8">
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
@@ -76,6 +58,23 @@ export default function RegistrationForm() {
                 </p>
               </div>
             </div>
+            <div className="flex flex-col md:flex-row justify-center gap-6 mt-10">
+            <Button 
+              className="bg-white text-primary hover:bg-white/90 px-8 py-6 text-lg font-medium"
+              asChild
+            >
+              <a href="#">Contact Us</a>
+            </Button>
+            
+            <Button 
+              className="bg-secondary text-black hover:bg-secondary/90 px-8 py-6 text-lg font-medium"
+              asChild
+            >
+              <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
+                Enroll Now
+              </a>
+            </Button>
+          </div>
           </div>
         </div>
       </div>

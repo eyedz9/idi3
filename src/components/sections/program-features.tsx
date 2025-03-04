@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
 
 export default function ProgramFeatures() {
   const services = [
@@ -42,7 +43,7 @@ export default function ProgramFeatures() {
     <section className="py-20 bg-accent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-primary">12-Week Certificate Course12-Week Certificate Course</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-primary">12-Week Certificate Course</h2>
           <div className="w-20 h-1 bg-secondary mx-auto my-6"></div>
           <p className="text-gray-700 text-xl mt-6">The Certificate Course explores residential design and home staging and is avocational. Students learn the most current design and techniques from a faculty of successful working professionals. Small class size and personal attention are offered in an industry current facility.</p>
           
@@ -58,8 +59,10 @@ export default function ProgramFeatures() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <div className="text-4xl mb-4 text-secondary">{service.icon}</div>
-              <h3 className="text-xl font-bold mb-4 text-primary">{service.title}</h3>
+              <div className="flex items-center mb-4">
+                <div className="text-4xl mr-3 text-secondary">{service.icon}</div>
+                <h3 className="text-xl font-bold text-primary">{service.title}</h3>
+              </div>
               {Array.isArray(service.description) ? (
                 <div className="grid grid-cols-2 gap-2">
                   <ul className="list-disc pl-5 text-gray-700">
@@ -78,6 +81,18 @@ export default function ProgramFeatures() {
               )}
             </motion.div>
           ))}
+        </div>
+        
+        <div className="mt-12 text-center">
+          <Button 
+            variant="secondary" 
+            size="lg" 
+            className="font-semibold text-base"
+            onClick={() => window.location.href = '/contact-us'}
+          >
+            Enroll Now
+          </Button>
+          <p className="mt-4 text-gray-700">Start your interior design journey today!</p>
         </div>
       </div>
     </section>
