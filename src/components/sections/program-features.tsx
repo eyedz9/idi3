@@ -6,34 +6,35 @@ import { motion } from 'framer-motion';
 export default function ProgramFeatures() {
   const services = [
     {
-      title: "Certificate Course",
-      description: "The Certificate Course explores residential design and home staging and is avocational. Students learn the most current design and techniques from a faculty of successful working professionals.",
-      icon: "🏠"
-    },
-    {
       title: "Lecture Topics",
-      description: "Beautiful Kitchens, Luxury Bathrooms, Magic of Color, Natural and Healthy Home, Outdoor Spaces, High-Tech Home, Home Staging, and more.",
+      description: [
+        "Beautiful Kitchens", 
+        "The Luxury Bathroom", 
+        "Magic of Color", 
+        "The Natural and Healthy Home", 
+        "Outdoor Spaces", 
+        "The High-Tech Home", 
+        "Home Staging", 
+        "Design Resources", 
+        "Floors That Rock", 
+        "Indoor Plantscaping", 
+        "Principles & Elements of Design", 
+        "Planning The Space", 
+        "Great Windows and Walls", 
+        "The History of the Chair"
+      ],
       icon: "📚"
     },
     {
       title: "Studio Workshops",
-      description: "Color & Styles, Furniture Selections, Textile Specifications, Drafting & Spaceplanning, Developing the Design Concept and Solution.",
+      description: [
+        "Color & Styles", 
+        "Furniture Selections", 
+        "Textile Specifications", 
+        "Drafting & Spaceplanning", 
+        "Developing the Design Concept and Solution"
+      ],
       icon: "🎨"
-    },
-    {
-      title: "Field Trips",
-      description: "Optional field trips to the Laguna Design Center and Stonemill Design Center to study sources of purchase for furniture, floorcoverings, and accessories.",
-      icon: "🚌"
-    },
-    {
-      title: "Online Learning",
-      description: "Online classes are live classes with personalized attention and are not just self-taught programs like many other online design schools.",
-      icon: "💻"
-    },
-    {
-      title: "In-Person Classes",
-      description: "Small class size and personal attention are offered in an industry current facility with hands-on learning experiences.",
-      icon: "👥"
     }
   ];
 
@@ -41,16 +42,13 @@ export default function ProgramFeatures() {
     <section className="py-20 bg-accent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-primary">Our Best Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-primary">12-Week Certificate Course12-Week Certificate Course</h2>
           <div className="w-20 h-1 bg-secondary mx-auto my-6"></div>
-          <div className="flex justify-center mt-8">
-            <a href="#" className="text-primary hover:text-secondary font-medium transition-colors border-b-2 border-secondary pb-1">
-              More Services
-            </a>
-          </div>
+          <p className="text-gray-700 text-xl mt-6">The Certificate Course explores residential design and home staging and is avocational. Students learn the most current design and techniques from a faculty of successful working professionals. Small class size and personal attention are offered in an industry current facility.</p>
+          
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -62,10 +60,22 @@ export default function ProgramFeatures() {
             >
               <div className="text-4xl mb-4 text-secondary">{service.icon}</div>
               <h3 className="text-xl font-bold mb-4 text-primary">{service.title}</h3>
-              <p className="text-gray-700 mb-6">{service.description}</p>
-              <a href="#" className="text-primary hover:text-secondary font-medium transition-colors inline-block">
-                Read More
-              </a>
+              {Array.isArray(service.description) ? (
+                <div className="grid grid-cols-2 gap-2">
+                  <ul className="list-disc pl-5 text-gray-700">
+                    {service.description.slice(0, Math.ceil(service.description.length / 2)).map((item, i) => (
+                      <li key={i} className="mb-2">{item}</li>
+                    ))}
+                  </ul>
+                  <ul className="list-disc pl-5 text-gray-700">
+                    {service.description.slice(Math.ceil(service.description.length / 2)).map((item, i) => (
+                      <li key={i} className="mb-2">{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ) : (
+                <p className="text-gray-700 mb-6">{service.description}</p>
+              )}
             </motion.div>
           ))}
         </div>

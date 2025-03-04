@@ -17,7 +17,6 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ProgramFeatures />
-        <Testimonials />
         <RegistrationForm />
       </main>
       <Footer />

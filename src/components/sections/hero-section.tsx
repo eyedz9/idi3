@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 
 export default function HeroSection() {
   const heroContent = {
-    title: "Earn Your Interior Design Certificate In Just 12 Weeks",
-    subtitle: "Ready to Bring Your Design Dreams to Life?",
+    title: "Learn Interior Design Online or In-Person.",
+    subtitle: "Complete Course in 12 Weeks",
     description: "Explore your passion for interior design with our avocational Certificate Course. This program focuses on residential design and home staging for personal enrichment.",
     bgImage: "/images/hero-bg.jpg"
   };
@@ -19,7 +19,7 @@ export default function HeroSection() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
           style={{ backgroundImage: `url(${heroContent.bgImage})` }}
         >
-          <div className="absolute inset-0 bg-black opacity-40"></div>
+          <div className="absolute inset-0 bg-black opacity-75"></div>
         </div>
         
         <div className="relative h-full flex items-center z-10">
@@ -47,7 +47,7 @@ export default function HeroSection() {
                     asChild
                   >
                     <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
-                      Enroll Today
+                    Ready to Bring Your Design Dreams to Life? Enroll Today.
                     </a>
                   </Button>
                 </div>
