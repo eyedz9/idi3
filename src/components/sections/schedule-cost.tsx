@@ -6,10 +6,10 @@ import { Button } from '@/components/ui/button';
 
 export default function RegistrationForm() {
   return (
-    <section id="schedule-cost" className="py-20 bg-[url('/images/schedule-bg.jpg')] bg-cover bg-center bg-no-repeat text-white relative">
-      <div className="absolute inset-0 bg-black/80"></div>
+    <section id="schedule-cost" className="py-24 bg-[url('/images/schedule-bg.jpg')] bg-cover bg-fixed bg-center bg-no-repeat text-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/85 to-black/80 backdrop-blur-sm"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -17,59 +17,141 @@ export default function RegistrationForm() {
             transition={{ duration: 0.6 }}
             className="text-center mb-10"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Schedule and Cost</h2>
-            <div className="w-20 h-1 bg-secondary mx-auto my-6"></div>
+            <span className="text-secondary text-lg font-semibold mb-4 block">Plan Your Journey</span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Schedule and Cost</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary mx-auto my-6 rounded-full"></div>
           </motion.div>
           
           <div className="mt-16 grid md:grid-cols-2 gap-8">
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-              <h3 className="text-2xl font-semibold mb-6 text-white text-center">Schedule of Certificate Course</h3>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300"
+            >
+              <h3 className="text-2xl font-bold mb-8 text-white text-center bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">
+                Schedule of Certificate Course
+              </h3>
               
-              <div className="space-y-6">
-                <div className="bg-white/10 p-4 rounded-lg">
-                  <h4 className="text-xl font-semibold mb-2 text-secondary text-center">In Person Combined Certificate Course</h4>
-                  <p className="text-center mb-2">Lectures &amp; Studio Workshops May 5-July 24, 2025</p>
-                  <p className="text-center font-medium mb-1">Classes meet:</p>
-                  <p className="text-center">Tues. &amp; Wed. 9 A.M. – 11:30 A.M.</p>
-                  <p className="text-center">Tues. &amp; Thur. 9 A.M. – 11:30 A.M.</p>
+              <div className="space-y-8">
+                <div className="bg-white/5 p-6 rounded-xl border border-white/5 hover:border-white/10 transition-all duration-300">
+                  <div className="flex items-center justify-center mb-4">
+                    <svg className="w-6 h-6 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h4 className="text-xl font-semibold text-secondary">In Person Combined Certificate Course</h4>
+                  </div>
+                  <div className="space-y-3">
+                    <p className="text-center text-lg">Lectures &amp; Studio Workshops May 5-July 24, 2025</p>
+                    <div className="bg-white/5 rounded-lg p-4">
+                      <p className="text-center font-medium text-secondary mb-2">Classes meet:</p>
+                      <p className="text-center">Tues. &amp; Wed. 9 A.M. – 11:30 A.M.</p>
+                      <p className="text-center">Tues. &amp; Thur. 9 A.M. – 11:30 A.M.</p>
+                    </div>
+                  </div>
                 </div>
                 
-                <div className="bg-white/10 p-4 rounded-lg">
-                  <h4 className="text-xl font-semibold mb-2 text-secondary text-center">Evening Combined Certificate Course</h4>
-                  <p className="text-center mb-2">Lectures &amp; Studio Workshops May 5-July 24, 2025</p>
-                  <p className="text-center font-medium mb-1">Classes meet:</p>
-                  <p className="text-center">Tues. 6 P.M. – 8:30 P.M In-Person. &amp; Thur. 6 P.M. – 8:30 P.M. Online</p>
+                <div className="bg-white/5 p-6 rounded-xl border border-white/5 hover:border-white/10 transition-all duration-300">
+                  <div className="flex items-center justify-center mb-4">
+                    <svg className="w-6 h-6 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2M16 11a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <h4 className="text-xl font-semibold text-secondary">Evening Combined Certificate Course</h4>
+                  </div>
+                  <div className="space-y-3">
+                    <p className="text-center text-lg">Lectures &amp; Studio Workshops May 5-July 24, 2025</p>
+                    <div className="bg-white/5 rounded-lg p-4">
+                      <p className="text-center font-medium text-secondary mb-2">Classes meet:</p>
+                      <p className="text-center">Tues. 6 P.M. – 8:30 P.M In-Person. &amp; Thur. 6 P.M. – 8:30 P.M. Online</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
             
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-              <h3 className="text-2xl font-semibold mb-6 text-white text-center">Tuition for Certificate Course</h3>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300"
+            >
+              <h3 className="text-2xl font-bold mb-8 text-white text-center bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">
+                Tuition for Certificate Course
+              </h3>
               
-              <div className="bg-white/10 p-4 rounded-lg mb-4">
-                <h4 className="text-xl font-semibold mb-2 text-secondary text-center">
-                  Lectures $1,200.00 &amp; Studio Workshops $1,200.00
-                  <br />or<br />
-                  3 months payments of $800.00
-                </h4>
-                <p className="text-center mb-3">+ $95 Registration Fee NonRefundable.</p>
-                <p className="text-center italic">
-                  The tuition does not include the supply kit purchased from the school for $300 and payable with the first payment. Additional miscellaneous supplies to be purchased outside of school are estimated at $250.
-                </p>
+              <div className="bg-white/5 p-6 rounded-xl border border-white/5 hover:border-white/10 transition-all duration-300">
+                <div className="text-center space-y-6">
+                  <div>
+                    <h4 className="text-2xl font-bold text-secondary mb-2">Full Payment Option</h4>
+                    <div className="flex justify-center items-baseline gap-2">
+                      <span className="text-3xl font-bold">$2,400</span>
+                      <span className="text-white/70">total</span>
+                    </div>
+                    <p className="text-sm text-white/70 mt-1">(Lectures $1,200 + Studio Workshops $1,200)</p>
+                  </div>
+                  
+                  <div className="relative">
+                    <div className="absolute inset-0 flex items-center">
+                      <div className="w-full"></div>
+                    </div>
+                    <div className="relative flex justify-center">
+                      <span className="bg-white/10 px-4 text-sm text-white/70">or</span>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-2xl font-bold text-secondary mb-2">Payment Plan</h4>
+                    <div className="flex justify-center items-baseline gap-2">
+                      <span className="text-3xl font-bold">$800</span>
+                      <span className="text-white/70">/ month</span>
+                    </div>
+                    <p className="text-sm text-white/70 mt-1">for 3 months</p>
+                  </div>
+                </div>
+                
+                <div className="mt-8 space-y-4">
+                  <div className="flex items-center gap-2 text-white/90">
+                    <svg className="w-5 h-5 text-secondary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p>$95 Registration Fee (Non-Refundable)</p>
+                  </div>
+                  <div className="flex items-center gap-2 text-white/90">
+                    <svg className="w-5 h-5 text-secondary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p>Supply kit from school: $300 (due with first payment)</p>
+                  </div>
+                  <div className="flex items-center gap-2 text-white/90">
+                    <svg className="w-5 h-5 text-secondary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p>Additional supplies (purchased separately): ~$250</p>
+                  </div>
+                </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
-          <div className="flex flex-col md:flex-row justify-center gap-6 mt-10">            
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="flex flex-col items-center mt-12"
+          >            
             <Button 
-              className="mx-auto bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white font-extrabold text-lg px-8 py-6 rounded-lg shadow-lg transform transition-all duration-300 hover:shadow-xl"
+              className="btn-gradient px-10 py-6 rounded-xl font-extrabold text-lg"
               asChild
             >
               <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
-                Enroll Today<span className="ml-2">→</span>
+                Start Your Journey<span className="ml-3 text-xl">→</span>
               </a>
             </Button>
-          </div>
+            <p className="mt-6 text-white/70 font-medium">Transform your passion into a career</p>
+          </motion.div>
       </div>
     </section>
   );

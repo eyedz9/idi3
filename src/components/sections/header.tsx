@@ -16,11 +16,11 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full">
       {/* Top Bar with Contact Info and Social Icons */}
-      <div className="bg-primary py-2 hidden lg:block">
+      <div className="bg-gradient-to-r from-primary to-primary/90 py-2.5 hidden lg:block">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
             {/* Contact Info */}
-            <div className="flex space-x-6 text-white">
+            <div className="flex space-x-8 text-white/90">
               <div className="flex items-center">
                 <span className="font-medium">Call: </span>
                 <a href="tel:(949) 675-4451" className="ml-1 hover:text-secondary transition-colors">(949) 675-4451</a>
@@ -59,7 +59,7 @@ export default function Header() {
       </div>
 
       {/* Main Header */}
-      <div className="bg-white shadow-md">
+      <div className="bg-white/80 backdrop-blur-sm shadow-lg border-b border-gray-100">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
@@ -79,26 +79,26 @@ export default function Header() {
             <nav className="hidden lg:flex justify-end items-center">
               <ul className="flex items-center">
                 <li className="group relative">
-                  <a href="#about-section" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Certificate Course</a>
+                  <a href="#about-section" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-all duration-300 hover:scale-105">Certificate Course</a>
                 </li>
                 <li className="group relative">
-                  <a href="#schedule-cost" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Schedule &amp; Tuition</a>
+                  <a href="#schedule-cost" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-all duration-300 hover:scale-105">Schedule &amp; Tuition</a>
                 </li>
                 <li className="group relative">
-                  <a href="#footer" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Supplies</a>
+                  <a href="#footer" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-all duration-300 hover:scale-105">Supplies</a>
                 </li>
                 <li className="group relative">
-                  <a href="https://idi.edu" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">IDI</a>
+                  <a href="https://idi.edu" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-all duration-300 hover:scale-105">IDI</a>
                 </li>
                 <li className="group relative">
-                  <a href="https://www.idi.edu/disclosures/bppe-disclosures/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Disclosures</a>
+                  <a href="https://www.idi.edu/disclosures/bppe-disclosures/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-all duration-300 hover:scale-105">Disclosures</a>
                 </li>
                 <li className="group relative">
-                  <a href="https://idi.edu/contact-us/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Contact Us</a>
+                  <a href="https://idi.edu/contact-us/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-all duration-300 hover:scale-105">Contact Us</a>
                 </li>
                 <li className="ml-4">
                   <Button 
-                    className="bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white font-extrabold text-lg px-8 py-6 rounded-lg shadow-lg transform transition-all duration-300 hover:shadow-xl"
+                    className="btn-gradient px-8 py-6 rounded-xl font-extrabold text-lg"
                     asChild
                   >
                     <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
@@ -110,11 +110,12 @@ export default function Header() {
             </nav>
 
             {/* Mobile Menu Button */}
-            <div className="lg:hidden">
-              <button 
+            <div className="lg:hidden relative z-50">
+              <motion.button 
                 onClick={toggleMenu}
-                className="text-gray-700 hover:text-primary focus:outline-none"
+                className="text-gray-700 hover:text-primary focus:outline-none p-2 hover:bg-gray-100 rounded-lg transition-colors"
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                whileTap={{ scale: 0.95 }}
               >
                 {isMenuOpen ? (
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -125,7 +126,7 @@ export default function Header() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
                 )}
-              </button>
+              </motion.button>
             </div>
           </div>
         </div>
@@ -140,7 +141,7 @@ export default function Header() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-white border-t border-gray-200 shadow-lg"
+            className="lg:hidden bg-white/95 backdrop-blur-sm border-t border-gray-100 shadow-xl fixed inset-x-0 top-[120px]"
           >
             <div className="container mx-auto px-4 py-4">
               {/* Mobile Contact Info */}
@@ -160,7 +161,7 @@ export default function Header() {
                 <a href="https://idi.edu/contact-us/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Contact Us</a>
                 
                 <Button 
-                  className="bg-secondary text-secondary-foreground hover:bg-secondary/90 w-full mt-4"
+                  className="btn-gradient w-full mt-4 py-4 rounded-lg text-lg font-bold"
                   asChild
                 >
                   <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">

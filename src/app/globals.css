@@ -12,21 +12,21 @@
 /* #feffec */
 
 :root {
-  /* Decorators Color Scheme */
-  --background: #feffec;
-  --foreground: #333333;
-  --card: #FFFFFF;
-  --card-foreground: #333333;
-  --popover: #FFFFFF;
-  --popover-foreground: #333333;
-  --primary: #4BBFB4; /* Teal/Turquoise */
-  --primary-foreground: #FFFFFF;
-  --secondary: #F9D423; /* Bright Yellow/Gold */
+  /* Enhanced Color Scheme */
+  --background: #fafafa;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --primary: #3daea3; /* Refined Teal */
+  --primary-foreground: #ffffff;
+  --secondary: #ffc107; /* Warmer Gold */
   --secondary-foreground: #000000;
-  --muted: #F5F5F5;
-  --muted-foreground: #666666;
-  --accent: #FF6B6B; /* Coral/Pink */
-  --accent-foreground: #333333;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+  --accent: #ff5757; /* Vibrant Coral */
+  --accent-foreground: #ffffff;
   --destructive: oklch(57.7% 0.245 27.325deg);
   --destructive-foreground: oklch(57.7% 0.245 27.325deg);
   --border: #E5E5E5;
@@ -131,6 +131,42 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground pt-[120px];
+    @apply bg-background text-foreground pt-[120px] antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+  }
+  /* Enhanced Scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/50 rounded-full hover:bg-primary/70 transition-colors;
+  }
+  /* Common Animations */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-[1.02];
+  }
+  /* Enhanced Focus Styles */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary/50 ring-offset-2;
+  }
+  /* Button Base Styles */
+  .btn-gradient {
+    @apply bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5;
+  }
+  /* Card Base Styles */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  /* Section Base Styles */
+  .section-padding {
+    @apply py-16 md:py-24;
   }
 }

@@ -40,14 +40,25 @@ export default function ProgramFeatures() {
   ];
 
   return (
-    <section className="pt-10 pb-20 bg-tertiary">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-accent text-3xl md:text-4xl font-bold mb-2">12-Week Certificate Course</h2>
-          <div className="w-20 h-1 bg-secondary mx-auto my-6"></div>
-          <p className="text-xl mt-6">The Certificate Course explores residential design and home staging and is avocational. Students learn the most current design and techniques from a faculty of successful working professionals. Small class size and personal attention are offered in an industry current facility.</p>
-          
-        </div>
+    <section className="section-padding relative overflow-hidden bg-gradient-to-br from-background via-muted to-background">
+      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <div className="container mx-auto px-4 relative">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <span className="text-primary text-lg font-semibold mb-4 block">Comprehensive Curriculum</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-accent via-primary to-secondary">
+            12-Week Certificate Course
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary mx-auto my-6 rounded-full"></div>
+          <p className="text-xl leading-relaxed max-w-3xl mx-auto text-gray-700">
+            The Certificate Course explores residential design and home staging and is avocational. Students learn the most current design and techniques from a faculty of successful working professionals. Small class size and personal attention are offered in an industry current facility.
+          </p>
+        </motion.div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
@@ -57,22 +68,28 @@ export default function ProgramFeatures() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
             >
-              <div className="flex items-center mb-4">
-                <div className="text-4xl mr-3 text-secondary">{service.icon}</div>
-                <h3 className="text-xl font-bold text-primary">{service.title}</h3>
+              <div className="flex items-center mb-6">
+                <div className="text-5xl mr-4 bg-gradient-to-br from-secondary to-primary text-transparent bg-clip-text">{service.icon}</div>
+                <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{service.title}</h3>
               </div>
               {Array.isArray(service.description) ? (
-                <div className="grid grid-cols-2 gap-2">
-                  <ul className="list-disc pl-5 text-gray-700">
+                <div className="grid grid-cols-2 gap-4">
+                  <ul className="space-y-3 text-gray-700">
                     {service.description.slice(0, Math.ceil(service.description.length / 2)).map((item, i) => (
-                      <li key={i} className="mb-2">{item}</li>
+                      <li key={i} className="flex items-center">
+                        <span className="w-2 h-2 rounded-full bg-secondary mr-2"></span>
+                        {item}
+                      </li>
                     ))}
                   </ul>
-                  <ul className="list-disc pl-5 text-gray-700">
+                  <ul className="space-y-3 text-gray-700">
                     {service.description.slice(Math.ceil(service.description.length / 2)).map((item, i) => (
-                      <li key={i} className="mb-2">{item}</li>
+                      <li key={i} className="flex items-center">
+                        <span className="w-2 h-2 rounded-full bg-secondary mr-2"></span>
+                        {item}
+                      </li>
                     ))}
                   </ul>
                 </div>
@@ -83,17 +100,23 @@ export default function ProgramFeatures() {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mt-16 text-center"
+        >
           <Button 
-            className="bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white font-extrabold text-lg px-8 py-6 rounded-lg shadow-lg transform transition-all duration-300 hover:shadow-xl"
+            className="btn-gradient px-10 py-6 rounded-xl font-extrabold text-lg"
             asChild
           >
             <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
-              Enroll Today<span className="ml-2">→</span>
+              Begin Your Journey<span className="ml-3 text-xl">→</span>
             </a>
           </Button>
-          <p className="mt-4 text-white">Start your interior design journey today!</p>
-        </div>
+          <p className="mt-6 text-gray-600 font-medium">Transform your passion for design into expertise</p>
+        </motion.div>
       </div>
     </section>
   );
