@@ -8,10 +8,10 @@ export default function Footer() {
     <footer className="bg-primary text-white">
       
       {/* Supplies Section */}
-      <section className="py-16 bg-accent">
+      <section className="py-16 bg-tertiary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-primary">Supplies</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">Supplies</h2>
             <div className="w-20 h-1 bg-secondary mx-auto my-6"></div>
           </div>
           

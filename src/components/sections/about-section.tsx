@@ -17,7 +17,7 @@ export default function AboutSection() {
           className="max-w-6xl mx-auto"
         >
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-primary">Connect, Create, and Learn with Real Design Instructors</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-accent">Connect, Create, and Learn with Real Design Instructors</h2>
             <div className="w-20 h-1 bg-secondary mx-auto my-6"></div>
           </div>
           

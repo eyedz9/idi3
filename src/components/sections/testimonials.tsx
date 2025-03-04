@@ -41,7 +41,7 @@ export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="py-20 bg-accent">
+    <section className="py-20 bg-tertiary">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <Carousel 

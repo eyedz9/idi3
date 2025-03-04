@@ -40,12 +40,12 @@ export default function ProgramFeatures() {
   ];
 
   return (
-    <section className="py-20 bg-accent">
+    <section className="py-20 bg-tertiary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-primary">12-Week Certificate Course</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">12-Week Certificate Course</h2>
           <div className="w-20 h-1 bg-secondary mx-auto my-6"></div>
-          <p className="text-gray-700 text-xl mt-6">The Certificate Course explores residential design and home staging and is avocational. Students learn the most current design and techniques from a faculty of successful working professionals. Small class size and personal attention are offered in an industry current facility.</p>
+          <p className="text-white text-xl mt-6">The Certificate Course explores residential design and home staging and is avocational. Students learn the most current design and techniques from a faculty of successful working professionals. Small class size and personal attention are offered in an industry current facility.</p>
           
         </div>
         
@@ -92,7 +92,7 @@ export default function ProgramFeatures() {
               Enroll Today<span className="ml-2">→</span>
             </a>
           </Button>
-          <p className="mt-4 text-gray-700">Start your interior design journey today!</p>
+          <p className="mt-4 text-white">Start your interior design journey today!</p>
         </div>
       </div>
     </section>

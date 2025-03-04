@@ -18,18 +18,26 @@ module.exports = {
     },
     extend: {
       colors: {
-        // IDI color scheme based on their website
+        // IDI color scheme based on their website (updated to match idi.edu)
         primary: {
-          DEFAULT: "#003366", // Dark blue/navy
+          DEFAULT: "#4BBFB4", // Teal/Turquoise
           foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "#D4AF37", // Gold
+          DEFAULT: "#F9D423", // Bright Yellow/Gold
           foreground: "#000000",
         },
         accent: {
-          DEFAULT: "#F5F5F5", // Light gray
-          foreground: "#333333",
+          DEFAULT: "#FF6B6B", // Coral/Pink
+          foreground: "#ffffff",
+        },
+        tertiary: {
+          DEFAULT: "#C4D600", // Lime/Chartreuse Green
+          foreground: "#000000",
+        },
+        quaternary: {
+          DEFAULT: "#E74C3C", // Red
+          foreground: "#ffffff",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
