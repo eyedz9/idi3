@@ -18,10 +18,10 @@ export default function Footer() {
   };
 
   return (
-    <footer id="footer" className="bg-primary text-white">
+    <footer id="footer" className="text-white">
       
       {/* Supplies Section */}
-      <section className="py-16 bg-tertiary">
+      <section className="py-16 bg-primary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">Supplies</h2>
@@ -76,7 +76,7 @@ export default function Footer() {
       </section>
       
       {/* Main Footer */}
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-12 text-gray-700">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1: Logo and Social */}
           <div>
@@ -113,13 +113,13 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
-            <p className="text-white/80">IDI - 2019 ACCSC School <br />of Excellence</p>
+            <p className="text-gray/80">IDI - 2019 ACCSC School <br />of Excellence</p>
           </div>
 
           {/* Column 2: About Us */}
           <div>
             <h3 className="text-xl font-bold mb-4">About Us</h3>
-            <p className="text-white/80">
+            <p className="text-gray/80">
               Interior Designers Institute is a boutique college, specializing in teaching interior design and interior architecture. The college&apos;s specialized curriculum, offers each student a personalized education with student-focused faculty, who love teaching. IDI&apos;s mission is to be an exclusive producer of interior design graduates, who become some of the most well-known and successful designers in the country.
             </p>
           </div>
@@ -129,13 +129,13 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Explore</h3>
             <nav>
               <ul className="space-y-2">
-                <li><a href="#about-section" onClick={(e) => handleScroll(e, '#about-section')} className="text-white/80 hover:text-white transition-colors uppercase">Certificate Course</a></li>
-                <li><a href="#schedule-cost" onClick={(e) => handleScroll(e, '#schedule-cost')} className="text-white/80 hover:text-white transition-colors uppercase">Schedule & Tuition</a></li>
-                <li><a href="#footer" onClick={(e) => handleScroll(e, '#footer')} className="text-white/80 hover:text-white transition-colors uppercase">Supplies</a></li>
-                <li><a href="https://idi.edu" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors uppercase">IDI</a></li>
-                <li><a href="https://www.idi.edu/disclosures/bppe-disclosures/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors uppercase">Disclosures</a></li>
-                <li><a href="https://idi.edu/contact-us/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors uppercase">Contact Us</a></li>
-                <li><a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors uppercase">Sign Up</a></li>
+                <li><a href="#about-section" onClick={(e) => handleScroll(e, '#about-section')} className="text-gray/80 hover:text-gray transition-colors uppercase">Certificate Course</a></li>
+                <li><a href="#schedule-cost" onClick={(e) => handleScroll(e, '#schedule-cost')} className="text-gray/80 hover:text-gray transition-colors uppercase">Schedule & Tuition</a></li>
+                <li><a href="#footer" onClick={(e) => handleScroll(e, '#footer')} className="text-gray/80 hover:text-gray transition-colors uppercase">Supplies</a></li>
+                <li><a href="https://idi.edu" target="_blank" rel="noopener noreferrer" className="text-gray/80 hover:text-gray transition-colors uppercase">IDI</a></li>
+                <li><a href="https://www.idi.edu/disclosures/bppe-disclosures/" target="_blank" rel="noopener noreferrer" className="text-gray/80 hover:text-gray transition-colors uppercase">Disclosures</a></li>
+                <li><a href="https://idi.edu/contact-us/" target="_blank" rel="noopener noreferrer" className="text-gray/80 hover:text-gray transition-colors uppercase">Contact Us</a></li>
+                <li><a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer" className="text-gray/80 hover:text-gray transition-colors uppercase">Sign Up</a></li>
               </ul>
             </nav>
           </div>
@@ -143,19 +143,15 @@ export default function Footer() {
           {/* Column 4: Contact Us */}
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <p className="text-white/80 mb-4">1061 Camelback Street Newport Beach, CA 92660</p>
+            <p className="text-gray/80 mb-4">1061 Camelback Street Newport Beach, CA 92660</p>
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
-                <span className="text-white/80 font-semibold">Phone:</span>
-                <a href="tel:(949) 675-4451" className="text-white/80 hover:text-white transition-colors">(949) 675-4451</a>
+                <span className="text-gray/80 font-semibold">Phone:</span>
+                <a href="tel:19496754451" className="text-gray/80 hover:text-gray transition-colors">(949) 675-4451</a>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-white/80 font-semibold">Fax:</span>
-                <a href="tel:(949)-759-0667" className="text-white/80 hover:text-white transition-colors">(949)-759-0667</a>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-white/80 font-semibold">Email:</span>
-                <a href="mailto:Contact@idi.edu" className="text-white/80 hover:text-white transition-colors">contact@idi.edu</a>
+                <span className="text-gray/80 font-semibold">Email:</span>
+                <a href="mailto:contact@idi.edu" className="text-gray/80 hover:text-gray transition-colors">contact@idi.edu</a>
               </li>
             </ul>
           </div>
@@ -163,10 +159,10 @@ export default function Footer() {
       </div>
       
       {/* Copyright */}
-      <div className="bg-gray-900 py-4">
+      <div className="bg-primary py-4">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-white/60 text-sm mb-2 md:mb-0">©2025 Interior Designers Institute. All Rights Reserved.</p>
+            <p className="text-white text-sm mb-2 md:mb-0">©2025 Interior Designers Institute. All Rights Reserved.</p>
           </div>
         </div>
       </div>

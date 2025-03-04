@@ -9,9 +9,11 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* #feffec */
+
 :root {
   /* Decorators Color Scheme */
-  --background: #FFFFFF;
+  --background: #feffec;
   --foreground: #333333;
   --card: #FFFFFF;
   --card-foreground: #333333;

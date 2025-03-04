@@ -40,7 +40,7 @@ export default function ProgramFeatures() {
   ];
 
   return (
-    <section className="py-20 bg-tertiary">
+    <section className="pt-10 pb-20 bg-tertiary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-accent text-3xl md:text-4xl font-bold mb-2">12-Week Certificate Course</h2>
