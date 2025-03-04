@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
+import Image from 'next/image';
 
 // Testimonial data - this would typically come from a CMS or API
 const testimonials = [
@@ -51,7 +52,7 @@ export default function Testimonials() {
             }}
           >
             <CarouselContent>
-              {testimonials.map((testimonial, index) => (
+              {testimonials.map((testimonial) => (
                 <CarouselItem key={testimonial.id}>
                   <motion.div
                     initial={{ opacity: 0 }}
@@ -69,9 +70,11 @@ export default function Testimonials() {
                           </div>
                           <p className="mb-6 text-gray-700 text-lg italic">{testimonial.quote}</p>
                           <div className="flex items-center">
-                            <img 
+                            <Image 
                               src={testimonial.image} 
                               alt={testimonial.name} 
+                              width={48}
+                              height={48}
                               className="w-12 h-12 rounded-full object-cover mr-4"
                             />
                             <div className="text-left">

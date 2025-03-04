@@ -3,10 +3,11 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -63,9 +64,15 @@ export default function Header() {
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <div className="flex items-center">
-              <a href="/" className="flex items-center">
-                <img src="/images/logo.png" alt="Interior Designers Institute" className="h-16" />
-              </a>
+              <Link href="/" className="flex items-center">
+                <Image 
+                  src="/images/logo.png" 
+                  alt="Interior Designers Institute" 
+                  width={200}
+                  height={64}
+                  className="h-16 w-auto"
+                />
+              </Link>
             </div>
 
             {/* Navigation - moved to main header and right-justified */}

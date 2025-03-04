@@ -1,7 +1,8 @@
 "use client";
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -19,16 +20,22 @@ export default function Footer() {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="md:flex">
                 <div className="md:w-1/3">
-                  <img src="/images/drafting_table.jpg" alt="Portable Drafting Table" className="w-full object-contain p-4" />
+                  <Image 
+                    src="/images/drafting_table.jpg" 
+                    alt="Portable Drafting Table" 
+                    width={400}
+                    height={300}
+                    className="w-full object-contain p-4"
+                  />
                 </div>
                 <div className="p-6 md:w-2/3">
                   <h3 className="text-xl font-bold text-primary mb-4">
                     Required Equipment for the online certificate studio workshop
                   </h3>
                   <div className="mb-4">
-                    <p className="font-semibold text-gray-800">Portable Drafting Table (minimum size 20" x 26") with parallel bar or straightedge</p>
+                    <p className="font-semibold text-gray-800">Portable Drafting Table (minimum size 20&quot; x 26&quot;) with parallel bar or straightedge</p>
                     <p className="text-gray-700 mt-2">
-                      Portable drawing and drafting board with built-in parallel straightedge for all kinds of creative and technical applications. Perfect for students and those who need an accurate drawing surface but don't have the space for a full-size drafting table.
+                      Portable drawing and drafting board with built-in parallel straightedge for all kinds of creative and technical applications. Perfect for students and those who need an accurate drawing surface but don&apos;t have the space for a full-size drafting table.
                     </p>
                     <p className="text-red-700 mt-2">
                       This item is mandatory and can be purchased from various suppliers.
@@ -62,9 +69,15 @@ export default function Footer() {
           {/* Column 1: Logo and Social */}
           <div>
             <div className="mb-4">
-              <a href="/" className="inline-block">
-                <img src="/images/logo.png" alt="Interior Designers Institute" className="h-16 w-auto" />
-              </a>
+              <Link href="/" className="inline-block">
+                <Image 
+                  src="/images/logo.png" 
+                  alt="Interior Designers Institute" 
+                  width={200}
+                  height={64}
+                  className="h-16 w-auto"
+                />
+              </Link>
             </div>
             <div className="flex space-x-4 mb-4">
               <a href="https://www.facebook.com/interiordesignersinstitute/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-secondary transition-colors">
@@ -95,7 +108,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">About Us</h3>
             <p className="text-white/80">
-              Interior Designers Institute is a boutique college, specializing in teaching interior design and interior architecture. The college's specialized curriculum, offers each student a personalized education with student-focused faculty, who love teaching. IDI's mission is to be an exclusive producer of interior design graduates, who become some of the most well-known and successful designers in the country.
+              Interior Designers Institute is a boutique college, specializing in teaching interior design and interior architecture. The college&apos;s specialized curriculum, offers each student a personalized education with student-focused faculty, who love teaching. IDI&apos;s mission is to be an exclusive producer of interior design graduates, who become some of the most well-known and successful designers in the country.
             </p>
           </div>
 
@@ -103,12 +116,12 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Explore</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors uppercase">Certificate Course</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors uppercase">Schedule Tuition</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors uppercase">Supplies</a></li>
+              <li><Link href="/certificate-course" className="text-white/80 hover:text-white transition-colors uppercase">Certificate Course</Link></li>
+              <li><Link href="/schedule-tuition" className="text-white/80 hover:text-white transition-colors uppercase">Schedule Tuition</Link></li>
+              <li><Link href="/supplies" className="text-white/80 hover:text-white transition-colors uppercase">Supplies</Link></li>
               <li><a href="https://www.idi.edu" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors uppercase">IDI</a></li>
               <li><a href="https://www.idi.edu/disclosures/bppe-disclosures/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors uppercase">Disclosures</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors uppercase">Contact Us</a></li>
+              <li><Link href="/contact-us" className="text-white/80 hover:text-white transition-colors uppercase">Contact Us</Link></li>
               <li><a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors uppercase">Sign Up</a></li>
             </ul>
           </div>

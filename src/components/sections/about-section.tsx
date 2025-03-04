@@ -3,6 +3,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function AboutSection() {
   return (
@@ -47,10 +48,13 @@ export default function AboutSection() {
             
             <div className="lg:w-1/3 space-y-8">
               <figure className="relative">
-                <img 
+                <Image 
                   src="/images/about.jpg" 
                   alt="Interior Design" 
-                  className="w-full h-auto rounded-lg shadow-lg" 
+                  width={600}
+                  height={400}
+                  className="w-full h-auto rounded-lg shadow-lg"
+                  priority
                 />
                 <figcaption className="text-center text-sm text-gray-600 mt-2 italic">
                   Start creating stunning spaces — enroll today!
