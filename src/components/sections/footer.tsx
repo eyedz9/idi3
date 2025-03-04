@@ -1,10 +1,22 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Footer() {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <footer id="footer" className="bg-primary text-white">
       
@@ -115,15 +127,17 @@ export default function Footer() {
           {/* Column 3: Explore */}
           <div>
             <h3 className="text-xl font-bold mb-4">Explore</h3>
-            <ul className="space-y-2">
-              <li><Link href="/certificate-course" className="text-white/80 hover:text-white transition-colors uppercase">Certificate Course</Link></li>
-              <li><Link href="/schedule-tuition" className="text-white/80 hover:text-white transition-colors uppercase">Schedule Tuition</Link></li>
-              <li><Link href="/supplies" className="text-white/80 hover:text-white transition-colors uppercase">Supplies</Link></li>
-              <li><a href="https://www.idi.edu" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors uppercase">IDI</a></li>
-              <li><a href="https://www.idi.edu/disclosures/bppe-disclosures/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors uppercase">Disclosures</a></li>
-              <li><Link href="/contact-us" className="text-white/80 hover:text-white transition-colors uppercase">Contact Us</Link></li>
-              <li><a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors uppercase">Sign Up</a></li>
-            </ul>
+            <nav>
+              <ul className="space-y-2">
+                <li><a href="#about-section" onClick={(e) => handleScroll(e, '#about-section')} className="text-white/80 hover:text-white transition-colors uppercase">Certificate Course</a></li>
+                <li><a href="#schedule-cost" onClick={(e) => handleScroll(e, '#schedule-cost')} className="text-white/80 hover:text-white transition-colors uppercase">Schedule & Tuition</a></li>
+                <li><a href="#footer" onClick={(e) => handleScroll(e, '#footer')} className="text-white/80 hover:text-white transition-colors uppercase">Supplies</a></li>
+                <li><a href="https://idi.edu" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors uppercase">IDI</a></li>
+                <li><a href="https://www.idi.edu/disclosures/bppe-disclosures/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors uppercase">Disclosures</a></li>
+                <li><a href="https://idi.edu/contact-us/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors uppercase">Contact Us</a></li>
+                <li><a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors uppercase">Sign Up</a></li>
+              </ul>
+            </nav>
           </div>
 
           {/* Column 4: Contact Us */}

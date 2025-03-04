@@ -14,7 +14,7 @@ export default function Header() {
   };
 
   return (
-    <header className="relative z-50">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full">
       {/* Top Bar with Contact Info and Social Icons */}
       <div className="bg-primary py-2 hidden lg:block">
         <div className="container mx-auto px-4">
