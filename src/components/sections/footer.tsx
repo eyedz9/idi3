@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white">
+    <footer id="footer" className="bg-primary text-white">
       
       {/* Supplies Section */}
       <section className="py-16 bg-tertiary">

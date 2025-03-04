@@ -79,22 +79,22 @@ export default function Header() {
             <nav className="hidden lg:flex justify-end items-center">
               <ul className="flex items-center">
                 <li className="group relative">
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Certificate Course</a>
+                  <a href="#about-section" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Certificate Course</a>
                 </li>
                 <li className="group relative">
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Schedule &amp; Tuition</a>
+                  <a href="#schedule-cost" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Schedule &amp; Tuition</a>
                 </li>
                 <li className="group relative">
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Supplies</a>
+                  <a href="#footer" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Supplies</a>
                 </li>
                 <li className="group relative">
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">IDI</a>
+                  <a href="https://idi.edu" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">IDI</a>
                 </li>
                 <li className="group relative">
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Disclosures</a>
+                  <a href="https://www.idi.edu/disclosures/bppe-disclosures/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Disclosures</a>
                 </li>
                 <li className="group relative">
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Contact Us</a>
+                  <a href="https://idi.edu/contact-us/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors">Contact Us</a>
                 </li>
                 <li className="ml-4">
                   <Button 
@@ -152,12 +152,12 @@ export default function Header() {
               </div>
               
               <nav className="flex flex-col space-y-4">
-                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Certificate Course</a>
-                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Schedule AND Tuition</a>
-                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Supplies</a>
-                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">IDI</a>
-                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Disclosures</a>
-                <a href="#" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Contact Us</a>
+                <a href="#about-section" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Certificate Course</a>
+                <a href="#schedule-cost" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Schedule &amp; Tuition</a>
+                <a href="#footer" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Supplies</a>
+                <a href="https://idi.edu" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">IDI</a>
+                <a href="https://www.idi.edu/disclosures/bppe-disclosures/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Disclosures</a>
+                <a href="https://idi.edu/contact-us/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary font-medium transition-colors py-2">Contact Us</a>
                 
                 <Button 
                   className="bg-secondary text-secondary-foreground hover:bg-secondary/90 w-full mt-4"
