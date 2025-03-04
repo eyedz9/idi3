@@ -50,7 +50,7 @@ export default function ProgramFeatures() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary text-lg font-semibold mb-4 block">Comprehensive Curriculum</span>
+          <span className="text-primary text-lg font-semibold mb-4 block">Comprehensive Avocational Curriculum</span>
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-accent via-primary to-secondary">
             12-Week Certificate Course
           </h2>
