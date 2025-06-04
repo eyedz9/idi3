@@ -40,31 +40,20 @@ export default function RegistrationForm() {
                     <svg className="w-6 h-6 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <h4 className="text-xl font-semibold text-secondary">In Person Combined Certificate Course</h4>
+                    <h4 className="text-xl font-semibold text-secondary">Class Schedule Options</h4>
                   </div>
                   <div className="space-y-3">
-                    <p className="text-center text-lg">Lectures &amp; Studio Workshops May 5-July 24, 2025</p>
+                    <p className="text-center text-lg">Choose the days and times that work best for you:</p>
                     <div className="bg-white/5 rounded-lg p-4">
-                      <p className="text-center font-medium text-secondary mb-2">Classes meet:</p>
-                      <p className="text-center">Tues. &amp; Wed. 9 A.M. – 11:30 A.M.</p>
-                      <p className="text-center">Tues. &amp; Thur. 9 A.M. – 11:30 A.M.</p>
+                      <p className="text-center">Tuesday Lecture in-person: 9:00 A.M. – 11:30 A.M.</p>
+                      <p className="text-center">Wednesday Studio in-person: 9:00 A.M. – 11:30 A.M.</p>
+                      <p className="text-center">Thursday Studio in-person: 9:00 A.M. – 11:30 A.M.</p>
+                      <p className="text-center">Tuesday Studio online or in person 6:00 P.M. – 8:30 P.M.</p>
+                      <p className="text-center">Thursday Lecture online 6:00 P.M. – 8:30 P.M.</p>
                     </div>
-                  </div>
-                </div>
-                
-                <div className="bg-white/5 p-6 rounded-xl border border-white/5 hover:border-white/10 transition-all duration-300">
-                  <div className="flex items-center justify-center mb-4">
-                    <svg className="w-6 h-6 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2M16 11a4 4 0 11-8 0 4 4 0 018 0z" />
-                    </svg>
-                    <h4 className="text-xl font-semibold text-secondary">Evening Combined Certificate Course</h4>
-                  </div>
-                  <div className="space-y-3">
-                    <p className="text-center text-lg">Lectures &amp; Studio Workshops May 5-July 24, 2025</p>
-                    <div className="bg-white/5 rounded-lg p-4">
-                      <p className="text-center font-medium text-secondary mb-2">Classes meet:</p>
-                      <p className="text-center">Tues. 6 P.M. – 8:30 P.M In-Person. &amp; Thur. 6 P.M. – 8:30 P.M. Online</p>
-                    </div>
+                    <p className="text-center text-lg">You may select your schedule — mix and match—to create a schedule that fits your needs.</p>
+                    <p className="text-center text-lg">Hybrid online option is also available!</p>
+                    <p className="text-center text-lg">Students are eligible to earn the Certificate of Completion when both lectures & studios are successfully completed.</p>
                   </div>
                 </div>
               </div>
