@@ -111,7 +111,7 @@ export default function ProgramFeatures() {
             className="btn-gradient px-10 py-6 rounded-xl font-extrabold text-lg"
             asChild
           >
-            <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
+            <a href="https://interiordesignersinstitute.formstack.com/forms/winter_2026_registration" target="_blank" rel="noopener noreferrer">
               Begin Your Journey<span className="ml-3 text-xl">→</span>
             </a>
           </Button>

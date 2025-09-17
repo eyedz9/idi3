@@ -198,7 +198,7 @@ export default function Footer() {
                 <li><a href="https://idi.edu" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition-colors uppercase">IDI</a></li>
                 <li><a href="https://www.idi.edu/disclosures/bppe-disclosures/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition-colors uppercase">Disclosures</a></li>
                 <li><a href="https://idi.edu/contact-us/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition-colors uppercase">Contact Us</a></li>
-                <li><a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition-colors uppercase">Sign Up</a></li>
+                <li><a href="https://interiordesignersinstitute.formstack.com/forms/winter_2026_registration" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition-colors uppercase">Sign Up</a></li>
               </ul>
             </nav>
           </motion.div>

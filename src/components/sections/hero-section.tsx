@@ -46,7 +46,7 @@ export default function HeroSection() {
                     className="bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white font-extrabold text-lg px-8 py-6 rounded-lg shadow-lg transform transition-all duration-300 hover:shadow-xl"
                     asChild
                   >
-                    <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
+                    <a href="https://interiordesignersinstitute.formstack.com/forms/winter_2026_registration" target="_blank" rel="noopener noreferrer">
                       Enroll Today<span className="ml-2">→</span>
                     </a>
                   </Button>

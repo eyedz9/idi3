@@ -101,7 +101,7 @@ export default function Header() {
                     className="btn-gradient px-8 py-6 rounded-xl font-extrabold text-lg"
                     asChild
                   >
-                    <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
+                    <a href="https://interiordesignersinstitute.formstack.com/forms/winter_2026_registration" target="_blank" rel="noopener noreferrer">
                       Enroll Today<span className="ml-2">→</span>
                     </a>
                   </Button>
@@ -164,7 +164,7 @@ export default function Header() {
                   className="btn-gradient w-full mt-4 py-4 rounded-lg text-lg font-bold"
                   asChild
                 >
-                  <a href="https://interiordesignersinstitute.formstack.com/forms/online_idi_registration_copy" target="_blank" rel="noopener noreferrer">
+                  <a href="https://interiordesignersinstitute.formstack.com/forms/winter_2026_registration" target="_blank" rel="noopener noreferrer">
                     Sign Up
                   </a>
                 </Button>
