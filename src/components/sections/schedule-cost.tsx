@@ -43,6 +43,7 @@ export default function RegistrationForm() {
                     <h4 className="text-xl font-semibold text-secondary">Class Schedule Options</h4>
                   </div>
                   <div className="space-y-3">
+                    <p className="text-center text-lg">January 12 - April 6, 2026</p>
                     <p className="text-center text-lg">Choose the days and times that work best for you:</p>
                     <div className="bg-white/5 rounded-lg p-4">
                       <p className="text-center">Tuesday Lecture in-person: 9:00 A.M. – 11:30 A.M.</p>
