@@ -43,13 +43,12 @@ export default function RegistrationForm() {
                     <h4 className="text-xl font-semibold text-secondary">Class Schedule Options</h4>
                   </div>
                   <div className="space-y-3">
-                    <p className="text-center text-lg">September 9 - December 4, 2025</p>
                     <p className="text-center text-lg">Choose the days and times that work best for you:</p>
                     <div className="bg-white/5 rounded-lg p-4">
                       <p className="text-center">Tuesday Lecture in-person: 9:00 A.M. – 11:30 A.M.</p>
                       <p className="text-center">Wednesday Studio in-person: 9:00 A.M. – 11:30 A.M.</p>
                       <p className="text-center">Thursday Studio in-person: 9:00 A.M. – 11:30 A.M.</p>
-                      <p className="text-center">Tuesday Studio online or in person 6:00 P.M. – 8:30 P.M.</p>
+                      <p className="text-center">Tuesday Studio online 6:00 P.M. – 8:30 P.M.</p>
                       <p className="text-center">Thursday Lecture online 6:00 P.M. – 8:30 P.M.</p>
                     </div>
                     <p className="text-center text-lg">You select your schedule — mix and match—to create a schedule that fits your needs.</p>
